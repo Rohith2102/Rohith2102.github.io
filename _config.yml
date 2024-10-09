@@ -31,7 +31,6 @@ author:
 # Include the _pages directory
 include:
   - _pages
-  - _sass
 
 
 # Plugins
