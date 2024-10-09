@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html lang="{{ site.locale }}">
-<head>
-  {% include head.html %}
-</head>
-<body>
-  <div class="site-container">
-    <header class="site-header">
-      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      {% include header.html %}
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    {% if site.google_analytics %}
+      <!-- Google Analytics code here if you use it -->
+    {% endif %}
+  </head>
+  <body>
+    <header>
+      <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+      {% if site.description %}
+        <p>{{ site.description }}</p>
+      {% endif %}
+      {% if site.github_repo %}
+        <p><a href="{{ site.github_repo }}">View on GitHub</a></p>
+      {% endif %}
     </header>
 
-    <div class="site-content">
-      {% if page.sidebar %}
-      <aside class="sidebar">
-        {% include sidebar.html %}
-      </aside>
-      {% endif %}
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/resume/" | relative_url }}">Resume</a></li>
+        <li><a href="{{ "/experience/" | relative_url }}">Experience</a></li>
+        <li><a href="{{ "/projects/" | relative_url }}">Projects</a></li>
+        <li><a href="{{ "/publications/" | relative_url }}">Publications</a></li>
+        <li><a href="{{ "/talks/" | relative_url }}">Talks</a></li>
+      </ul>
+    </nav>
 
-      <main class="main-content{% unless page.sidebar %} full-width{% endunless %}">
-        {{ content }}
-      </main>
-    </div>
+    <main>
+      {{ content }}
+    </main>
 
-    <footer class="site-footer">
-      {% include footer.html %}
+    <footer>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
     </footer>
-  </div>
-</body>
+  </body>
 </html>
