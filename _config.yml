@@ -1,0 +1,73 @@
+# Basic Site Settings
+locale: "en-US"
+title: "Your Name"
+title_separator: "-"
+name: "Rohith Reddy K"
+description: "Your personal website"
+url: "https://Rohith2102.github.io"
+baseurl: ""
+repository: "/Rohith2102.github.io"
+
+# Site Author
+author:
+  avatar: "profile.png"
+  name: "Rohith Reddy K"
+  bio: "Software Engineer"
+  location: "California, USA"
+  email: "krohithreddyk2@gmail.com.com"
+  github: "Rohith2102"
+  linkedin: "rohith-k"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  talks:
+    output: true
+    permalink: /talks/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: single
+      author_profile: true
+
+# Markdown Processing
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:title/
+
+# Plugins Configuration
+jekyll-feed:
+  path: atom.xml
+
+# SEO and Analytics (Optional)
+# Uncomment and set your Google Analytics ID if you have one
+# analytics:
+#   provider: "google"
+#   google:
+#     tracking_id: "UA-XXXXXXXXX-X"
