@@ -5,8 +5,8 @@ title_separator: "-"
 name: "Rohith Reddy K"
 description: "Your personal website"
 url: "https://Rohith2102.github.io"
-baseurl: ""
-repository: "/Rohith2102.github.io"
+baseurl: ""  # Leave this empty since your site is at the root
+repository: "Rohith2102/Rohith2102.github.io"
 
 # Site Author
 author:
@@ -14,9 +14,13 @@ author:
   name: "Rohith Reddy K"
   bio: "Software Engineer"
   location: "California, USA"
-  email: "krohithreddyk2@gmail.com.com"
+  email: "krohithreddyk2@gmail.com"
   github: "Rohith2102"
   linkedin: "rohith-k"
+
+# Include the _pages directory
+include:
+  - _pages
 
 # Plugins
 plugins:
@@ -28,30 +32,33 @@ plugins:
 collections:
   publications:
     output: true
-    permalink: /publications/:path/
+    permalink: /publications/:title/
   talks:
     output: true
-    permalink: /talks/:path/
+    permalink: /talks/:title/
 
 # Defaults
 defaults:
+  # Pages in _pages directory
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: default
+      permalink: "/:title/"
+  # Publications collection
   - scope:
       path: ""
-      type: pages
+      type: "publications"
     values:
-      layout: single
+      layout: default
       author_profile: true
+  # Talks collection
   - scope:
       path: ""
-      type: publications
+      type: "talks"
     values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: single
+      layout: default
       author_profile: true
 
 # Markdown Processing
