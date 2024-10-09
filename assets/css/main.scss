@@ -1,7 +1,6 @@
 ---
 ---
 
-/* Import Minimal Theme Styles */
 @import "jekyll-theme-minimal";
 
 /* Navigation Menu Styles */
@@ -27,21 +26,57 @@
   background-color: #111;
 }
 
-/* Main Content and Sidebar Styles */
-.main-content {
+/* Home Page Styles */
+.home-content {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.main-content section {
+.home-content .left-column {
+  flex: 1 1 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-content .left-column .profile-image {
+  border-radius: 50%;
+  width: 200px; /* Adjusted width */
+  height: 200px; /* Adjusted height */
+  margin-bottom: 15px;
+}
+
+.home-content .left-column .social-links {
+  margin-top: 20px;
+}
+
+.home-content .left-column .social-links a {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.home-content .left-column .social-links a i {
+  margin-right: 8px;
+}
+
+.home-content .left-column .social-links a:hover {
+  color: #007acc;
+}
+
+.home-content .right-column {
   flex: 1 1 70%;
   padding: 20px;
 }
 
-.main-content .sidebar {
-  flex: 1 1 30%;
-  padding: 20px;
-  background-color: #f1f1f1;
+.home-content .right-column h1 {
+  margin-top: 0;
+}
+
+.home-content .right-column p {
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 /* Responsive Design */
@@ -50,52 +85,11 @@
     display: block;
     text-align: center;
   }
-  .main-content {
+  .home-content {
     flex-direction: column;
   }
-  .main-content section,
-  .main-content .sidebar {
+  .home-content .left-column,
+  .home-content .right-column {
     flex: 1 1 100%;
   }
-}
-
-/* Sidebar Styling */
-.sidebar .profile {
-  text-align: center;
-}
-
-.sidebar .profile .profile-image {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 10px;
-}
-
-.sidebar .profile h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-}
-
-.sidebar .profile p {
-  font-size: 1em;
-  color: #666;
-}
-
-.sidebar .social-links {
-  margin-top: 20px;
-}
-
-.sidebar .social-links a {
-  display: block;
-  margin-bottom: 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.sidebar .social-links a i {
-  margin-right: 8px;
-}
-
-.sidebar .social-links a:hover {
-  color: #007acc;
 }
