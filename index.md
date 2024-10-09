@@ -5,7 +5,7 @@ title: "Home"
 
 <div class="home-content">
   <div class="left-column">
-    <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+    <img src="{{ '/assets/images/my-profile-img.DNG' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
     <div class="social-links">
       <a href="mailto:{{ site.author.email }}">
         <i class="fas fa-envelope"></i> Email
