@@ -7,7 +7,7 @@ title: "Home"
 
 <div class="home-content">
   <div class="left-column">
-    <img src="{{ '/assets/images/myprofile-img.DNG' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+    <img src="{{ '/assets/images/my-profile-img.DNG' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
 
     <h2 class="author-name">{{ site.author.name }}</h2>
 
