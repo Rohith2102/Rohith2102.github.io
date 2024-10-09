@@ -1,7 +1,7 @@
 <div class="profile">
-  <img src="{{ '/assets/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
-  <h2 class="author-name">{{ site.author.name }}</h2>
-  <p class="author-bio">{{ site.author.bio }}</p>
+  <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+  <h2>{{ site.author.name }}</h2>
+  <p>{{ site.author.bio }}</p>
 </div>
 
 <div class="social-links">
@@ -11,5 +11,5 @@
   <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
-  <!-- Add more social icons as needed -->
+  <!-- Add more social links as needed -->
 </div>
