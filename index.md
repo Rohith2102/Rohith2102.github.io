@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 ---
 
-<h1 class="page-title">Home</h1>
+
 
 <div class="home-content">
   <div class="left-column">
