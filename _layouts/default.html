@@ -4,10 +4,24 @@
   {% include head.html %}
 </head>
 <body>
-  {% include header.html %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer.html %}
+  <div class="site-container">
+    <header class="site-header">
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    </header>
+
+    <div class="site-content">
+      <aside class="sidebar">
+        {% include sidebar.html %}
+      </aside>
+
+      <main class="main-content">
+        {{ content }}
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      {% include footer.html %}
+    </footer>
+  </div>
 </body>
 </html>
