@@ -1,19 +1,8 @@
 <div class="profile">
-  <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+  <img src="{{ '/assets/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
   <h2 class="author-name">{{ site.author.name }}</h2>
   <p class="author-bio">{{ site.author.bio }}</p>
 </div>
-
-<nav class="sidebar-nav">
-  <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/resume/' | relative_url }}">Resume</a></li>
-    <li><a href="{{ '/experience/' | relative_url }}">Experience</a></li>
-    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-    <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
-    <li><a href="{{ '/talks/' | relative_url }}">Talks</a></li>
-  </ul>
-</nav>
 
 <div class="social-links">
   <a href="https://github.com/{{ site.author.github }}" target="_blank">
@@ -22,10 +11,5 @@
   <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
-  <a href="https://www.universitywebsite.edu" target="_blank">
-    <i class="fas fa-university"></i> {{ site.author.university }}
-  </a>
-  <a href="#" target="_blank">
-    <i class="fas fa-map-marker-alt"></i> {{ site.author.location }}
-  </a>
+  <!-- Add more social icons as needed -->
 </div>
