@@ -19,6 +19,11 @@ author:
   linkedin: "rohith-k"
   university: "UC Riverside"
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
 # Include the _pages directory
 include:
   - _pages
