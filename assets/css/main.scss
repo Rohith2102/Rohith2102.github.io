@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "jekyll-theme-minimal";
 
 /* Navigation Menu Styles */
@@ -46,22 +45,31 @@
   margin-bottom: 15px;
 }
 
-.home-content .left-column .social-links {
+.home-content .left-column .author-name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.home-content .left-column .icon-links {
   margin-top: 20px;
 }
 
-.home-content .left-column .social-links a {
-  display: block;
+.home-content .left-column .icon-link {
   margin-bottom: 10px;
+  color: #333;
+  font-size: 1em;
+}
+
+.home-content .left-column .icon-link i {
+  margin-right: 8px;
+}
+
+.home-content .left-column .icon-link a {
   color: #333;
   text-decoration: none;
 }
 
-.home-content .left-column .social-links a i {
-  margin-right: 8px;
-}
-
-.home-content .left-column .social-links a:hover {
+.home-content .left-column .icon-link a:hover {
   color: #007acc;
 }
 
