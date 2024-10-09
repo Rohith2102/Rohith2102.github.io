@@ -7,7 +7,7 @@ title: "Home"
   <div class="row">
     <!-- Left Column (4 columns) -->
     <div class="col-4 left-column">
-      <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+      <img src="{{ '/assets/images/my-profile-img.png' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
 
       <h2 class="author-name">{{ site.author.name }}</h2>
 
