@@ -7,14 +7,17 @@
   <div class="site-container">
     <header class="site-header">
       <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      {% include header.html %}
     </header>
 
     <div class="site-content">
+      {% if page.sidebar %}
       <aside class="sidebar">
         {% include sidebar.html %}
       </aside>
+      {% endif %}
 
-      <main class="main-content">
+      <main class="main-content{% unless page.sidebar %} full-width{% endunless %}">
         {{ content }}
       </main>
     </div>
