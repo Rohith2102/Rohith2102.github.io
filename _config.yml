@@ -1,43 +1,37 @@
 # Basic Site Settings
-locale: "en-US"
-title: "Rohith Reddy K"
-title_separator: "-"
-name: "Rohith Reddy K"
-description: "Your personal website"
-url: "https://Rohith2102.github.io"
-baseurl: ""  # Leave this empty since your site is at the root
+locale: "en-US"  # specifies the language and region of your website
+title: "Rohith Reddy K"  # Title of the site
+title_separator: "-"     
+name: "Rohith Reddy K"  # some themes pick up name instead of author's name
+description: "Your personal website"  # Basic description
+url: "https://Rohith2102.github.io"   
+baseurl: ""  # Leave this empty since your site is at the root if u are not at root rohith.github.io/portfolio then you fill it with /porfolio
 repository: "Rohith2102/Rohith2102.github.io"
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal  # the theme you wanna use
 
 # Site Author
 author:
-  avatar: "profile.png"
-  name: "Rohith Reddy K"
-  bio: "Software Engineer"
-  location: "California, USA"
-  email: "krohithreddyk2@gmail.com"
-  github: "Rohith2102"
-  linkedin: "rohith-k"
+  avatar: "profile.png"  # profile pic
+  name: "Rohith Reddy K"   # name
+  bio: "Software Engineer" # short Bio
+  location: "California, USA"  # Location
+  email: "krohithreddyk2@gmail.com" # Email
+  github: "Rohith2102"   # Username only
+  linkedin: "rohith-k"    # username only
   university: "UC Riverside"
 
-# sass:
-#   sass_dir: _sass
-#   style: compressed
-#   load_paths:
-#     - _sass
 
-
-
+# By default Jekyll excludes directories/files(In build process) that start with an underscore
 # Include the _pages directory
 include:
   - _pages
 
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# # Plugins
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+#   - jekyll-seo-tag
 
 # Collections
 collections:
