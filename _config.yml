@@ -7,7 +7,7 @@ description: "Your personal website"
 url: "https://Rohith2102.github.io"
 baseurl: ""  # Leave this empty since your site is at the root
 repository: "Rohith2102/Rohith2102.github.io"
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
 
 # Site Author
 author:
