@@ -63,18 +63,8 @@ defaults:
 
 # Markdown Processing
 markdown: kramdown
-highlighter: rouge
+
 
 # Permalinks
 permalink: /:title/
 
-# Plugins Configuration
-jekyll-feed:
-  path: atom.xml
-
-# SEO and Analytics (Optional)
-# Uncomment and set your Google Analytics ID if you have one
-# analytics:
-#   provider: "google"
-#   google:
-#     tracking_id: "UA-XXXXXXXXX-X"
