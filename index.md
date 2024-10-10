@@ -43,7 +43,7 @@ title: "Home"
     <h2>About Me</h2>
     <p>
       <!-- Write your details here -->
-      Welcome to my personal website! I am a [Your Profession], passionate about [Your Interests].
+      Welcome to my personal website! I am a Software Engineer, passionate about building new great products.
       Here you can find more about my work, projects, and interests.
     </p>
   </div>
