@@ -42,7 +42,7 @@ defaults:
   # Pages in _pages directory
   - scope:
       path: "_pages"
-      type: "pages"
+      type: "page"
     values:
       layout: default
       permalink: "/:title/"
