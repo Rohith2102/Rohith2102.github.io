@@ -32,7 +32,7 @@ include:
 collections:
   publications:
     output: true
-    permalink: /publications/:title/
+    permalink: /publications/:basename/
   talks:
     output: true
     permalink: /talks/:title/
