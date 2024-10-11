@@ -65,5 +65,5 @@ markdown: kramdown
 
 
 # Permalinks
-permalink: /:title/
+# permalink: /:title/
 
