@@ -1,5 +1,5 @@
 ---
-title: "Quantum Computing: A Survey of Applications"
+title: "Computing: A Survey of Applications"
 authors: "Rohith Reddy K, Albert Lin"
 journal: "Quantum Computing Review"
 year: 2021
