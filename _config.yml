@@ -45,7 +45,6 @@ defaults:
       type: "page"
     values:
       layout: default
-      permalink: "/:title/"
   # Publications collection
   - scope:
       path: ""
