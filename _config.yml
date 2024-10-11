@@ -64,6 +64,4 @@ defaults:
 markdown: kramdown
 
 
-# Permalinks
-# permalink: /:title/
 
