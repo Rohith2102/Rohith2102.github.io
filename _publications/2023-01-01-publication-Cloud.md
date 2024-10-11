@@ -1,5 +1,5 @@
 ---
-title: "Title of the Publication"
+title: "Cloud Computing"
 authors: "Rohith Reddy K, Co-author"
 journal: "Journal Name"
 year: 2023
