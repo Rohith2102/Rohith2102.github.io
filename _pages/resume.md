@@ -1,8 +1,7 @@
 ---
 layout: default
 title: "Resume"
-
-
+permalink: /resume/
 ---
 
 # Rohith Reddy K
