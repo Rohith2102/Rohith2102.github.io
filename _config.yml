@@ -11,7 +11,7 @@ theme: jekyll-theme-minimal  # the theme you wanna use
 
 # Site Author
 author:
-  avatar: "profile.png"  # profile pic
+  avatar: "my-profile-img.png"  # profile pic
   name: "Rohith Reddy K"   # name
   bio: "Software Engineer" # short Bio
   location: "California, USA"  # Location
