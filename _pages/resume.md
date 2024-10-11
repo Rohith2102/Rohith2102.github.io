@@ -1,6 +1,7 @@
 ---
 title: "Resume"
 permalink: /resume/
+show_footer: false
 ---
 
 # Rohith Reddy K
