@@ -4,7 +4,6 @@ authors: "Rohith Reddy K, Emily Davis"
 journal: "Health Informatics Journal"
 year: 2020
 doi: "https://doi.org/10.4321/bigdata-healthcare"
-url: 2020-01-01-publication-title
 layout: default
 ---
 
