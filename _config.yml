@@ -32,7 +32,7 @@ include:
 collections:
   publications:
     output: true
-    permalink: /publications/:basename/
+    permalink: /publications/:title/
   talks:
     output: true
     permalink: /talks/:title/
@@ -42,7 +42,7 @@ defaults:
   # Pages in _pages directory
   - scope:
       path: "_pages"
-      type: "pages"
+      type: "page"
     values:
       layout: default
   # Publications collection
