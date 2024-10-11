@@ -42,7 +42,7 @@ defaults:
   # Pages in _pages directory
   - scope:
       path: "_pages"
-      type: "page"
+      type: "pages"
     values:
       layout: default
   # Publications collection
